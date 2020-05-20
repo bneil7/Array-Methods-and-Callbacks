@@ -60,7 +60,6 @@ function getWinners(finalsCallBack) {
 };
 
 console.log(getWinners(getFinals));
-// this is still wrong, according to fox sports, Uruguay was the champion, but this is console.log'ing Germany FR... was there not a "Stage: Final" in 1950..? 
 
 
 /* Task 6: Implement a higher-order function called `getWinnersByYear` that accepts the following parameters and returns a set of strings "In {year}, {country} won the world cup!" 
@@ -71,10 +70,12 @@ Parameters:
  */
 
 function getWinnersByYear(callback1, callback2) {
-     /* code here */
+     let callback1 = getWinners();
+     let callback2 = getYears();
+     
 };
-
-getWinnersByYear();
+console.log(`In ${item['Year']}, ${item['Team Name']} won the world cup!`);
+getWinnersByYear(getWinners, getYears);
 
 /* Task 7: Write a function called `getAverageGoals` that accepts a parameter `data` and returns the the average number of home team goals and away team goals scored per match (Hint: use .reduce and do this in 2 steps) */
 
