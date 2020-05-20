@@ -60,6 +60,8 @@ function getWinners(finalsCallBack) {
 };
 
 console.log(getWinners(getFinals));
+// this is still wrong, according to fox sports, Uruguay was the champion, but this is console.log'ing Germany FR... was there not a "Stage: Final" in 1950..? 
+
 
 /* Task 6: Implement a higher-order function called `getWinnersByYear` that accepts the following parameters and returns a set of strings "In {year}, {country} won the world cup!" 
 
